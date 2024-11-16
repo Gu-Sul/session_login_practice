@@ -53,6 +53,7 @@ loginButton.onclick = () => {
   login()
     .then(() => getUserInfo())
     .then((res) => renderUserInfo(res.data));
+  console.log(res);
 };
 
 // 로그아웃 버튼을 클릭하는 경우
